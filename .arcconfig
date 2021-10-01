@@ -1,7 +1,8 @@
 {
-  "phabricator.uri": "https://secure.phabricator.com/",
+  "phabricator.uri": "https://aitsys.dev/",
   "load": [
-    "src/"
+    "src/",
+    "../phabricator/src/"
   ],
   "history.immutable": false
 }

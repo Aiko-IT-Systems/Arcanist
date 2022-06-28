@@ -33,23 +33,23 @@ abstract class Phobject implements Iterator {
         get_class($this).'::'.$name));
   }
 
-  public function current() {
+  public function current() : mixed {
     $this->throwOnAttemptedIteration();
   }
 
-  public function key() {
+  public function key() : mixed {
     $this->throwOnAttemptedIteration();
   }
 
-  public function next() {
+  public function next() : void {
     $this->throwOnAttemptedIteration();
   }
 
-  public function rewind() {
+  public function rewind() : void {
     $this->throwOnAttemptedIteration();
   }
 
-  public function valid() {
+  public function valid() : bool {
     $this->throwOnAttemptedIteration();
   }
 

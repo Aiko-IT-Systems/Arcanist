@@ -114,7 +114,7 @@ final class ArcanistGitAPI extends ArcanistRepositoryAPI {
       // Particularly:
       //
       //    |
-      //    D <----- master branch
+      //    D <----- main branch
       //    |
       //    C  Y <- feature branch
       //    | /|
@@ -123,7 +123,7 @@ final class ArcanistGitAPI extends ArcanistRepositoryAPI {
       //    A
       //    |
       //
-      // If "A, B, C, D" are master, and the user is at Y, when they run
+      // If "A, B, C, D" are main, and the user is at Y, when they run
       // "arc diff B" they want (and get) a diff of B vs Y, but they think about
       // this as being the commits X and Y. If we log "B..Y", we only show
       // Y. With "Y --not B", we show X and Y.
@@ -337,7 +337,7 @@ final class ArcanistGitAPI extends ArcanistRepositoryAPI {
           "or select a default for this working copy.\n\nIn most cases, the ".
           "best default is '%s'. You can also select '%s' to preserve the ".
           "old behavior, or some other remote or branch. But you almost ".
-          "certainly want to select 'origin/master'.\n\n".
+          "certainly want to select 'origin/main'.\n\n".
           "(Technically: the merge-base of the selected revision and HEAD is ".
           "used to determine the start of the commit range.)",
           'HEAD^',
@@ -345,14 +345,14 @@ final class ArcanistGitAPI extends ArcanistRepositoryAPI {
           'HEAD^',
           'arc diff HEAD^',
           'arc diff',
-          'origin/master',
+          'origin/main',
           'HEAD^'));
 
-      $prompt = pht('What default do you want to use? [origin/master]');
+      $prompt = pht('What default do you want to use? [origin/main]');
       $default = phutil_console_prompt($prompt);
 
       if (!strlen(trim($default))) {
-        $default = 'origin/master';
+        $default = 'origin/main';
       }
 
       $default_relative = $default;

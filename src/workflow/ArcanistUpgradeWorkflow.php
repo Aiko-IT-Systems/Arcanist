@@ -31,7 +31,7 @@ EOTEXT
     );
 
     $supported_branches = array(
-      'master',
+      'main',
       'stable',
     );
     $supported_branches = array_fuse($supported_branches);

@@ -47,10 +47,10 @@ branch (or list of branches).
 
 (In Mercurial, the "into" and "onto" branches may be bookmarks instead.)
 
-In the most common case, there is only one "onto" branch (often "master" or
+In the most common case, there is only one "onto" branch (often "main" or
 "default" or some similar branch) and the "into" branch is the same branch. For
 example, it is common to merge local feature branch "feature1" into
-"origin/master", then push it onto "origin/master".
+"origin/main", then push it onto "origin/main".
 
 The list of "onto" branches is selected by examining these sources in order:
 
@@ -59,7 +59,7 @@ The list of "onto" branches is selected by examining these sources in order:
   - (in Git) the upstream of the branch targeted by the land operation,
     recursively;
   - or by falling back to a standard default:
-    - (in Git) "master";
+    - (in Git) "main";
     - (in Mercurial) "default".
 
 The remote to push "onto" is selected by examining these sources in order:

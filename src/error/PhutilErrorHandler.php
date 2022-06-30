@@ -486,7 +486,7 @@ final class PhutilErrorHandler extends Phobject {
       );
       $libinfo[$library] = array();
 
-      $get_refs = array('master');
+      $get_refs = array('main');
       foreach ($try_paths as $try_path) {
         // Try to read what the HEAD of the repository is pointed at. This is
         // normally the name of a branch ("ref").

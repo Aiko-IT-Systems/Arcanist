@@ -41,7 +41,7 @@ EOTEXT
         ->setHelp(
           pht(
             'Default branch name to view on server. Defaults to "%s".',
-            'master')),
+            'main')),
       $this->newWorkflowArgument('types')
         ->setParameter('type-list')
         ->setHelp(

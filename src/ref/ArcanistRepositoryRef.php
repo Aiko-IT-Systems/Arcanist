@@ -102,7 +102,7 @@ final class ArcanistRepositoryRef
     $branch = idxv($this->parameters, array('fields', 'defaultBranch'));
 
     if ($branch === null) {
-      return 'master';
+      return 'main';
     }
 
     return $branch;

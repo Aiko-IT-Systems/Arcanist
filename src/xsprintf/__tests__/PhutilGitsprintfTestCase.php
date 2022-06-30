@@ -5,7 +5,7 @@ final class PhutilGitsprintfTestCase extends PhutilTestCase {
   public function testHgsprintf() {
     $selectors = array(
       'HEAD' => 'HEAD',
-      'master' => 'master',
+      'main' => 'main',
       'a..b' => 'a..b',
       'feature^' => 'feature^',
       '--flag' => false,

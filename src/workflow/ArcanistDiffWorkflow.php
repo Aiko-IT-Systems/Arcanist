@@ -49,7 +49,7 @@ EOTEXT
           Generate a Differential diff or revision from local changes.
 
           Under git and mercurial, you can specify a commit (like __HEAD^^^__
-          or __master__) and Differential will generate a diff against the
+          or __main__) and Differential will generate a diff against the
           merge base of that commit and your current working directory parent.
 
           Under svn, you can choose to include only some of the modified files

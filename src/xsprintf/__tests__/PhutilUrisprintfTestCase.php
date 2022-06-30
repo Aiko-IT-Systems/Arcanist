@@ -8,8 +8,8 @@ final class PhutilUrisprintfTestCase extends PhutilTestCase {
       urisprintf('x.com?a=%s', 'huh?'));
 
     $this->assertEqual(
-      '/a/origin%252Fmaster/z/',
-      urisprintf('/a/%p/z/', 'origin/master'));
+      '/a/origin%252Fmain/z/',
+      urisprintf('/a/%p/z/', 'origin/main'));
 
     $this->assertEqual(
       'y.com?%21&%23',

@@ -148,9 +148,9 @@ final class ArcanistGitLandEngine
       // that descend from it onto its ancestor, not onto the landed change.
 
       // For example, if the change sequence was "W", "X", "Y", "Z" and we
-      // landed "Y" onto "master" using "--pick", we want to rebase "Z" onto
+      // landed "Y" onto "main" using "--pick", we want to rebase "Z" onto
       // "X" (so "W" and "X", which it will often depend on, are still
-      // its ancestors), not onto the new "master".
+      // its ancestors), not onto the new "main".
 
       if ($set->getIsPick()) {
         $rebase_target = $min_commit.'^';
@@ -1126,7 +1126,7 @@ final class ArcanistGitLandEngine
       return $remote_onto;
     }
 
-    $default_onto = 'master';
+    $default_onto = 'main';
 
     $log->writeStatus(
       pht('ONTO TARGET'),

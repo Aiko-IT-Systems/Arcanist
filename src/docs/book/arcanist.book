@@ -5,7 +5,7 @@
   "preface": "Technical documentation for developing Arcanist.",
   "root": "../../../",
   "uri.source":
-    "https://secure.phabricator.com/diffusion/ARC/browse/master/%f$%l",
+    "https://github.com/Aiko-IT-Systems/Arcanist/tree/main/%f#L%l",
   "rules": {
     "(\\.diviner$)": "DivinerArticleAtomizer",
     "(\\.php$)": "DivinerPHPAtomizer"

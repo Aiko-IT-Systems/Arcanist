@@ -2,7 +2,8 @@
   "phabricator.uri": "https://aitsys.dev/",
   "load": [
     "src/",
-    "../phabricator/src/"
+    "../phabricator/src/",
+    "../translatewiki/src/"
   ],
   "history.immutable": false
 }
